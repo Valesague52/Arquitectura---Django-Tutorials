@@ -1,0 +1,16 @@
+{% extends 'pages/base.html' %}
+
+{% block title %}{{title}}{% endblock %}
+{% block header_title %}{{subtitle}}{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="alert alert-success text-center" role="alert">
+        <h4 class="alert-heading">{{message}}</h4>
+        <p>Your product has been created successfully.</p>
+        <hr>
+        <a href="{% url 'index' %}" class="btn btn-primary">View Products</a>
+        <a href="{% url 'form' %}" class="btn btn-secondary">Create Another Product</a>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'pages/base.html' %}
+
+{% block title %}{{title}}{% endblock %}
+{% block header_title %}{{subtitle}}{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 ms-auto">
+            <h4>Contact Information</h4>
+            <p class="lead"><strong>Email:</strong> contact@onlinestore.com</p>
+            <p class="lead"><strong>Address:</strong> 123 Main St, Medellín, Colombia</p>
+            <p class="lead"><strong>Phone:</strong> +57 300 123 4567</p>
+        </div>
+        <div class="col-lg-6 me-auto">
+            <h4>Business Hours</h4>
+            <p class="lead">Monday - Friday: 9am - 6pm</p>
+            <p class="lead">Saturday: 10am - 4pm</p>
+            <p class="lead">Sunday: Closed</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
